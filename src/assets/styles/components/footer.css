@@ -1,6 +1,7 @@
 @media only screen and (min-width: 375px) {
   .footer {
-    background-color: var(--DarkBlue);
+    /* background-color: var(--DarkBlue); */
+    background-color: red;
     color: white;
     width: 100%;
     padding: 40px 20px;
