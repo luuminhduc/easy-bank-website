@@ -1,0 +1,108 @@
+/* Mobile */
+@media only screen and (min-width: 375px) {
+  .banner {
+    padding: 0 0px;
+    background-color: var(--VeryLightGray);
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    margin: 0;
+  }
+  .banner_img {
+    position: relative;
+  }
+  .banner img {
+    width: 100%;
+  }
+  .banner_text h1 {
+    font-weight: 300;
+    margin-bottom: 35px;
+    font-size: 50px;
+  }
+  .banner_text p {
+    color: var(--GrayishBlue);
+    font-size: 15px;
+    line-height: 25px;
+    margin-bottom: 35px;
+  }
+  .banner_bg_desktop {
+    display: none;
+  }
+  .banner_bg_mobile {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(-90px);
+  }
+  .banner_mockup {
+    z-index: 100;
+    position: relative;
+    transform: translateY(-180px);
+  }
+  .banner_text {
+    text-align: center;
+    transform: translateY(-190px);
+    width: 90%;
+    margin: auto;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .banner {
+    padding: 80px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    margin: 0;
+  }
+  .banner img {
+    width: 100%;
+    margin: 0;
+  }
+  .banner_text {
+    width: 50%;
+    transform: translateY(-100px);
+    text-align: left;
+  }
+  .banner_text h1 {
+    width: 75%;
+    font-size: 45px;
+  }
+  .banner_text p {
+    width: 80%;
+  }
+  .banner_img {
+    width: 50%;
+    position: relative;
+    transform: translate(210px, -95px);
+    z-index: 100;
+  }
+
+  .banner_mockup {
+    position: relative;
+    z-index: 50;
+    transform: scale(1.2) translateY(-10px);
+  }
+  .banner_bg_mobile {
+    display: none;
+  }
+  .banner_bg_desktop {
+    display: inline-block;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: 10;
+    transform: scale(1.9);
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  .banner {
+    padding: 20px 140px;
+  }
+}

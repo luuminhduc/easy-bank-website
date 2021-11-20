@@ -1,0 +1,33 @@
+@media only screen and (min-width: 375px) {
+  .articles {
+    background-color: var(--VeryLightGray);
+  }
+  .articles_list_item {
+    background-color: white;
+    cursor: pointer;
+    text-align: left;
+  }
+  .articles_list_item:hover h2 {
+    color: var(--LimeGreen);
+  }
+  .articles_list_item_content {
+    padding: 20px;
+  }
+  .articles_list_item h2 {
+    font-size: 15px;
+    font-weight: 400;
+    margin: 10px 0;
+  }
+  .articles_list_item small {
+    font-size: 11px;
+    color: var(---GrayishBlue);
+    opacity: 0.8;
+  }
+  .articles_list_item p {
+    font-size: 13px;
+    line-height: 1.5;
+  }
+  .articles img {
+    width: 100%;
+  }
+}

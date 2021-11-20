@@ -1,0 +1,121 @@
+/* Mobile */
+@media only screen and (min-width: 375px) {
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    z-index: 9999;
+    position: relative;
+    background-color: white;
+  }
+  .header.nav_active nav {
+    display: block;
+  }
+  .close_nav {
+    display: none;
+  }
+  .menu {
+    display: inline-block;
+  }
+  .header.nav_active .close_nav {
+    display: inline-block;
+  }
+  .header.nav_active .menu {
+    display: none;
+  }
+  .nav_btn {
+    cursor: pointer;
+  }
+  nav {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    display: none;
+  }
+  nav ul {
+    background-color: white;
+    text-align: center;
+    padding: 20px 0;
+    width: 90%;
+    margin: auto;
+    margin-top: 60px;
+  }
+  nav ul li {
+    list-style: none;
+    display: block;
+    margin: 20px 0;
+  }
+  li a {
+    text-decoration: none;
+    font-size: 15px;
+    color: var(--GrayishBlue);
+  }
+  li a:hover {
+    color: var(--DarkBlue);
+  }
+  .header .btn_main {
+    display: none;
+  }
+}
+
+/* Conputer */
+@media only screen and (min-width: 900px) {
+  .header {
+    padding: 20px 20px;
+  }
+  .nav_btn {
+    display: none !important;
+  }
+  .header .btn_main {
+    display: inline-block;
+  }
+  nav {
+    position: static;
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    display: inline-block;
+  }
+  nav ul {
+    background-color: transparent;
+    padding: 0;
+    width: auto;
+    margin: 0;
+  }
+  nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+  }
+  nav ul li a {
+    position: relative;
+  }
+  li a:hover::after {
+    width: 100%;
+  }
+  li a::after {
+    content: "";
+    position: absolute;
+    bottom: -35px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: -webkit-linear-gradient(
+      to right,
+      var(--LimeGreen),
+      var(--BrightCyan)
+    );
+    background: linear-gradient(to right, var(--LimeGreen), var(--BrightCyan));
+    transition: width 0.2s linear;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  .header {
+    padding: 20px 140px;
+  }
+}

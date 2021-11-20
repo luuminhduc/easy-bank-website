@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-stack);
+  margin: 0;
+  padding: 0;
+  color: var(--DarkBlue);
+  /* overflow: hidden; */
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+.btn_main {
+  background: -webkit-linear-gradient(
+    to right,
+    var(--LimeGreen),
+    var(--BrightCyan)
+  );
+  background: linear-gradient(to right, var(--LimeGreen), var(--BrightCyan));
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 15px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: 400;
+}
+.btn_main:hover {
+  opacity: 0.8;
+}
